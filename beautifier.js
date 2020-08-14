@@ -49,5 +49,6 @@ itr = document.getElementsByClassName("f4 text-normal mb-2");
 for (i = 0; i < itr.length; i++){
     if (itr[i].innerText.match(/contributions in the last year/)){
         itr[i].innerText = totalcontri + " contributions in the last year";
+        break;
     }
 }
