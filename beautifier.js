@@ -11,8 +11,9 @@ for (i = 1; i < itr.length; i++){
 
 itr = document.getElementsByClassName("text-bold text-gray-dark");
 for (i = 0; i < itr.length; i++){
-    if (itr[i].nextSibling.textContent.match(/followers/)){
+    if (itr[i].nextSibling.textContent.match(/follower/)){
         itr[i].innerText = 100000 + Math.floor(Math.random() * 900000);
+        itr[i].nextSibling.textContent = " followers";
         break;
     }
 }
